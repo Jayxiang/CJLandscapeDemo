@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CJMaskAllViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"默认竖屏";
 }
 
 

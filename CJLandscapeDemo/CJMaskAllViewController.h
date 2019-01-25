@@ -1,16 +1,17 @@
 //
-//  ViewController.h
+//  CJMaskAllViewController.h
 //  CJLandscapeDemo
 //
 //  Created by tet-cjx on 2019/1/23.
 //  Copyright © 2019 hyd-cjx. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface ViewController : BaseViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface CJMaskAllViewController : BaseViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

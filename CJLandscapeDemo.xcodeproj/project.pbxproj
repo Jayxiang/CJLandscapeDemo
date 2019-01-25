@@ -13,6 +13,15 @@
 		A76ABF9021F8599C00E3EBF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76ABF8F21F8599C00E3EBF2 /* Assets.xcassets */; };
 		A76ABF9321F8599C00E3EBF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76ABF9121F8599C00E3EBF2 /* LaunchScreen.storyboard */; };
 		A76ABF9621F8599C00E3EBF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABF9521F8599C00E3EBF2 /* main.m */; };
+		A76ABF9E21F85B3700E3EBF2 /* BaseTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABF9D21F85B3700E3EBF2 /* BaseTabBarVC.m */; };
+		A76ABFA121F85B5F00E3EBF2 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABFA021F85B5F00E3EBF2 /* BaseNavigationVC.m */; };
+		A76ABFA421F85B6F00E3EBF2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABFA321F85B6F00E3EBF2 /* BaseViewController.m */; };
+		A76ABFAB21F8608700E3EBF2 /* CJPortraitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABFA921F8608700E3EBF2 /* CJPortraitVC.m */; };
+		A76ABFAC21F8608700E3EBF2 /* CJPortraitVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76ABFAA21F8608700E3EBF2 /* CJPortraitVC.xib */; };
+		A76ABFB021F860B100E3EBF2 /* CJMaskAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABFAE21F860B100E3EBF2 /* CJMaskAllViewController.m */; };
+		A76ABFB121F860B100E3EBF2 /* CJMaskAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76ABFAF21F860B100E3EBF2 /* CJMaskAllViewController.xib */; };
+		A76ABFB521F9618900E3EBF2 /* CJLandscapeAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABFB321F9618900E3EBF2 /* CJLandscapeAllViewController.m */; };
+		A76ABFB621F9618900E3EBF2 /* CJLandscapeAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76ABFB421F9618900E3EBF2 /* CJLandscapeAllViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,21 @@
 		A76ABF9221F8599C00E3EBF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A76ABF9421F8599C00E3EBF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A76ABF9521F8599C00E3EBF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A76ABF9C21F85B3700E3EBF2 /* BaseTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarVC.h; sourceTree = "<group>"; };
+		A76ABF9D21F85B3700E3EBF2 /* BaseTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarVC.m; sourceTree = "<group>"; };
+		A76ABF9F21F85B5F00E3EBF2 /* BaseNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationVC.h; sourceTree = "<group>"; };
+		A76ABFA021F85B5F00E3EBF2 /* BaseNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationVC.m; sourceTree = "<group>"; };
+		A76ABFA221F85B6F00E3EBF2 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A76ABFA321F85B6F00E3EBF2 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A76ABFA821F8608700E3EBF2 /* CJPortraitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJPortraitVC.h; sourceTree = "<group>"; };
+		A76ABFA921F8608700E3EBF2 /* CJPortraitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJPortraitVC.m; sourceTree = "<group>"; };
+		A76ABFAA21F8608700E3EBF2 /* CJPortraitVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CJPortraitVC.xib; sourceTree = "<group>"; };
+		A76ABFAD21F860B100E3EBF2 /* CJMaskAllViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJMaskAllViewController.h; sourceTree = "<group>"; };
+		A76ABFAE21F860B100E3EBF2 /* CJMaskAllViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJMaskAllViewController.m; sourceTree = "<group>"; };
+		A76ABFAF21F860B100E3EBF2 /* CJMaskAllViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CJMaskAllViewController.xib; sourceTree = "<group>"; };
+		A76ABFB221F9618900E3EBF2 /* CJLandscapeAllViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJLandscapeAllViewController.h; sourceTree = "<group>"; };
+		A76ABFB321F9618900E3EBF2 /* CJLandscapeAllViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJLandscapeAllViewController.m; sourceTree = "<group>"; };
+		A76ABFB421F9618900E3EBF2 /* CJLandscapeAllViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CJLandscapeAllViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +86,21 @@
 				A76ABF8721F8599B00E3EBF2 /* AppDelegate.m */,
 				A76ABF8921F8599B00E3EBF2 /* ViewController.h */,
 				A76ABF8A21F8599B00E3EBF2 /* ViewController.m */,
+				A76ABFA821F8608700E3EBF2 /* CJPortraitVC.h */,
+				A76ABFA921F8608700E3EBF2 /* CJPortraitVC.m */,
+				A76ABFAA21F8608700E3EBF2 /* CJPortraitVC.xib */,
+				A76ABFAD21F860B100E3EBF2 /* CJMaskAllViewController.h */,
+				A76ABFAE21F860B100E3EBF2 /* CJMaskAllViewController.m */,
+				A76ABFAF21F860B100E3EBF2 /* CJMaskAllViewController.xib */,
+				A76ABFB221F9618900E3EBF2 /* CJLandscapeAllViewController.h */,
+				A76ABFB321F9618900E3EBF2 /* CJLandscapeAllViewController.m */,
+				A76ABFB421F9618900E3EBF2 /* CJLandscapeAllViewController.xib */,
+				A76ABF9C21F85B3700E3EBF2 /* BaseTabBarVC.h */,
+				A76ABF9D21F85B3700E3EBF2 /* BaseTabBarVC.m */,
+				A76ABF9F21F85B5F00E3EBF2 /* BaseNavigationVC.h */,
+				A76ABFA021F85B5F00E3EBF2 /* BaseNavigationVC.m */,
+				A76ABFA221F85B6F00E3EBF2 /* BaseViewController.h */,
+				A76ABFA321F85B6F00E3EBF2 /* BaseViewController.m */,
 				A76ABF8C21F8599B00E3EBF2 /* Main.storyboard */,
 				A76ABF8F21F8599C00E3EBF2 /* Assets.xcassets */,
 				A76ABF9121F8599C00E3EBF2 /* LaunchScreen.storyboard */,
@@ -128,7 +167,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76ABFB621F9618900E3EBF2 /* CJLandscapeAllViewController.xib in Resources */,
+				A76ABFAC21F8608700E3EBF2 /* CJPortraitVC.xib in Resources */,
 				A76ABF9321F8599C00E3EBF2 /* LaunchScreen.storyboard in Resources */,
+				A76ABFB121F860B100E3EBF2 /* CJMaskAllViewController.xib in Resources */,
 				A76ABF9021F8599C00E3EBF2 /* Assets.xcassets in Resources */,
 				A76ABF8E21F8599B00E3EBF2 /* Main.storyboard in Resources */,
 			);
@@ -142,8 +184,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76ABF8B21F8599B00E3EBF2 /* ViewController.m in Sources */,
+				A76ABFB521F9618900E3EBF2 /* CJLandscapeAllViewController.m in Sources */,
+				A76ABFA421F85B6F00E3EBF2 /* BaseViewController.m in Sources */,
+				A76ABF9E21F85B3700E3EBF2 /* BaseTabBarVC.m in Sources */,
+				A76ABFAB21F8608700E3EBF2 /* CJPortraitVC.m in Sources */,
 				A76ABF9621F8599C00E3EBF2 /* main.m in Sources */,
+				A76ABFB021F860B100E3EBF2 /* CJMaskAllViewController.m in Sources */,
 				A76ABF8821F8599B00E3EBF2 /* AppDelegate.m in Sources */,
+				A76ABFA121F85B5F00E3EBF2 /* BaseNavigationVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +334,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H89E4B6ACW;
 				INFOPLIST_FILE = CJLandscapeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecan.CJLandscapeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,14 +352,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H89E4B6ACW;
 				INFOPLIST_FILE = CJLandscapeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wecan.CJLandscapeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

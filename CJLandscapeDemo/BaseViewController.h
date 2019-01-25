@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  CJLandscapeDemo
 //
 //  Created by tet-cjx on 2019/1/23.
@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface ViewController : BaseViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface BaseViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
