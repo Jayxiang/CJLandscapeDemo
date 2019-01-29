@@ -12,7 +12,7 @@
 //sensitive 灵敏度
 static const float sensitive = 0.50;
 
-@interface CJLandscapeAllViewController ()
+@interface CJLandscapeAllViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (nonatomic, strong) CMMotionManager *manager;
 
@@ -94,7 +94,24 @@ static const float sensitive = 0.50;
     }
     return _manager;
 }
+- (IBAction)openClick:(id)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    picker.delegate = self;
+    [self presentViewController:picker animated:YES completion:^{}];
 
+}
+#pragma mark - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    [picker dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+    
+}
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 // 支持的方向
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskAll;
