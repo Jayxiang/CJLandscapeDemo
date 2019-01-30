@@ -15,7 +15,7 @@ static const float sensitive = 0.50;
 @interface CJLandscapeAllViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (nonatomic, strong) CMMotionManager *manager;
-
+@property (nonatomic, assign) BOOL lockDirection;
 @end
 
 @implementation CJLandscapeAllViewController
@@ -24,6 +24,7 @@ static const float sensitive = 0.50;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"所有方向(不受锁定影响)";
+    self.lockDirection = NO;
     if (self.manager.deviceMotionAvailable) {
         NSLog(@"Device Motion Available");
         [self.manager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue]
@@ -40,7 +41,15 @@ static const float sensitive = 0.50;
     [super viewDidDisappear:animated];
     [self.manager stopDeviceMotionUpdates];
 }
+- (IBAction)lockClick:(id)sender {
+    self.lockDirection = !self.lockDirection;
+    UIButton *lockBtn = (UIButton *)sender;
+    lockBtn.selected = self.lockDirection;
+}
 - (void)handleDeviceMotion:(CMDeviceMotion *)deviceMotion {
+    if (self.lockDirection) {
+        return;
+    }
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     double x = deviceMotion.gravity.x;
     double y = deviceMotion.gravity.y;
@@ -111,6 +120,11 @@ static const float sensitive = 0.50;
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+//是否可以旋转
+- (BOOL)shouldAutorotate {
+    return !self.lockDirection;
 }
 // 支持的方向
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {

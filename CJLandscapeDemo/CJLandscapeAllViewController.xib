@@ -33,11 +33,21 @@
                         <action selector="openClick:" destination="-1" eventType="touchUpInside" id="QxH-8M-Lso"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-gA-G8a">
+                    <rect key="frame" x="156.5" y="243" width="62" height="30"/>
+                    <state key="normal" title="锁定方向"/>
+                    <state key="selected" title="取消锁定"/>
+                    <connections>
+                        <action selector="lockClick:" destination="-1" eventType="touchUpInside" id="Fqh-qv-FqI"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q1R-L5-2Pn" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="7T3-yz-j41"/>
                 <constraint firstItem="gIU-Qg-qQN" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="GNV-gD-RH9"/>
+                <constraint firstItem="WVf-gA-G8a" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="GlU-xA-Vdr"/>
+                <constraint firstItem="WVf-gA-G8a" firstAttribute="top" secondItem="Q1R-L5-2Pn" secondAttribute="bottom" constant="28" id="Ju6-ZT-BE4"/>
                 <constraint firstItem="Q1R-L5-2Pn" firstAttribute="top" secondItem="gIU-Qg-qQN" secondAttribute="bottom" constant="35" id="crX-GX-ZX1"/>
                 <constraint firstItem="gIU-Qg-qQN" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="t38-AI-pex"/>
             </constraints>
