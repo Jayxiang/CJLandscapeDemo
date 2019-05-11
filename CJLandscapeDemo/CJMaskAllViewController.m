@@ -8,7 +8,8 @@
 
 #import "CJMaskAllViewController.h"
 
-@interface CJMaskAllViewController ()
+@interface CJMaskAllViewController ()<UITextViewDelegate,UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UITextView *changeTextView;
 
 @end
 
@@ -21,6 +22,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"所有方向(未锁定时)";
+    self.changeTextView.text = @"滑动我改变状态栏颜色\n\n滑动我改变状态栏颜色\n滑动我改变状态栏颜色\n滑动我改变状态栏颜色\n滑动我改变状态栏颜色";
+    self.changeTextView.selectable = NO;
+    self.changeTextView.delegate = self;
     hiddenStatus = NO;
     isPortrait = YES;
     //手机锁定竖屏后，UIDeviceOrientationDidChangeNotification通知就失效了。
@@ -140,6 +144,9 @@
         [invocation invoke];
     }
 }
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self setNeedsStatusBarAppearanceUpdate];
+}
 //是否可以旋转
 - (BOOL)shouldAutorotate {
     return YES;
@@ -154,7 +161,14 @@
 }
 //状态栏样式
 - (UIStatusBarStyle)preferredStatusBarStyle {
+    if (self.changeTextView.contentOffset.y >= 20) {
+        return UIStatusBarStyleLightContent;
+    }
     return UIStatusBarStyleDefault;
+}
+//状态栏改变动画
+- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
+    return UIStatusBarAnimationSlide;
 }
 - (void)dealloc {
     NSLog(@"%s",__func__);
