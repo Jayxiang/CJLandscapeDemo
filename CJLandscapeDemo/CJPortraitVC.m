@@ -9,6 +9,7 @@
 #import "CJPortraitVC.h"
 #import "CJMaskAllViewController.h"
 #import "CJLandscapeAllViewController.h"
+#import "CJTransformVC.h"
 
 @interface CJPortraitVC ()
 
@@ -28,6 +29,10 @@
 - (IBAction)pushAClick:(id)sender {
     CJLandscapeAllViewController *maskA = [CJLandscapeAllViewController new];
     [self.navigationController pushViewController:maskA animated:YES];
+}
+- (IBAction)pushTClick:(id)sender {
+    CJTransformVC *mask = [CJTransformVC new];
+    [self.navigationController pushViewController:mask animated:YES];
 }
 
 /*

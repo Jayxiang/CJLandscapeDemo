@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,10 +34,19 @@
                         <action selector="pushAClick:" destination="-1" eventType="touchUpInside" id="BN8-OQ-9Wo"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbt-5Y-ImN">
+                    <rect key="frame" x="111" y="303" width="153" height="30"/>
+                    <state key="normal" title="利用动画旋转强制横屏"/>
+                    <connections>
+                        <action selector="pushTClick:" destination="-1" eventType="touchUpInside" id="CBE-6C-RKb"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Jbt-5Y-ImN" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="JTc-jv-9cS"/>
                 <constraint firstItem="ecV-aP-lUS" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="MkU-29-JhR"/>
+                <constraint firstItem="Jbt-5Y-ImN" firstAttribute="top" secondItem="ecV-aP-lUS" secondAttribute="bottom" constant="20" id="bot-Ym-om1"/>
                 <constraint firstItem="NaZ-5L-1aO" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="174" id="eKX-Uw-wMG"/>
                 <constraint firstItem="ecV-aP-lUS" firstAttribute="top" secondItem="NaZ-5L-1aO" secondAttribute="bottom" constant="29" id="iRm-Q5-ozd"/>
                 <constraint firstItem="NaZ-5L-1aO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qU6-8Y-PVN"/>

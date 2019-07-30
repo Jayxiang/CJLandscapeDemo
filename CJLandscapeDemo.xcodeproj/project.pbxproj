@@ -22,6 +22,7 @@
 		A76ABFB121F860B100E3EBF2 /* CJMaskAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76ABFAF21F860B100E3EBF2 /* CJMaskAllViewController.xib */; };
 		A76ABFB521F9618900E3EBF2 /* CJLandscapeAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76ABFB321F9618900E3EBF2 /* CJLandscapeAllViewController.m */; };
 		A76ABFB621F9618900E3EBF2 /* CJLandscapeAllViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76ABFB421F9618900E3EBF2 /* CJLandscapeAllViewController.xib */; };
+		A77AE56222EFED73001561A4 /* CJTransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A77AE56122EFED73001561A4 /* CJTransformVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		A76ABFB221F9618900E3EBF2 /* CJLandscapeAllViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJLandscapeAllViewController.h; sourceTree = "<group>"; };
 		A76ABFB321F9618900E3EBF2 /* CJLandscapeAllViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJLandscapeAllViewController.m; sourceTree = "<group>"; };
 		A76ABFB421F9618900E3EBF2 /* CJLandscapeAllViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CJLandscapeAllViewController.xib; sourceTree = "<group>"; };
+		A77AE56022EFED73001561A4 /* CJTransformVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJTransformVC.h; sourceTree = "<group>"; };
+		A77AE56122EFED73001561A4 /* CJTransformVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJTransformVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				A76ABFB221F9618900E3EBF2 /* CJLandscapeAllViewController.h */,
 				A76ABFB321F9618900E3EBF2 /* CJLandscapeAllViewController.m */,
 				A76ABFB421F9618900E3EBF2 /* CJLandscapeAllViewController.xib */,
+				A77AE56022EFED73001561A4 /* CJTransformVC.h */,
+				A77AE56122EFED73001561A4 /* CJTransformVC.m */,
 				A76ABF9C21F85B3700E3EBF2 /* BaseTabBarVC.h */,
 				A76ABF9D21F85B3700E3EBF2 /* BaseTabBarVC.m */,
 				A76ABF9F21F85B5F00E3EBF2 /* BaseNavigationVC.h */,
@@ -191,6 +196,7 @@
 				A76ABF9621F8599C00E3EBF2 /* main.m in Sources */,
 				A76ABFB021F860B100E3EBF2 /* CJMaskAllViewController.m in Sources */,
 				A76ABF8821F8599B00E3EBF2 /* AppDelegate.m in Sources */,
+				A77AE56222EFED73001561A4 /* CJTransformVC.m in Sources */,
 				A76ABFA121F85B5F00E3EBF2 /* BaseNavigationVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
