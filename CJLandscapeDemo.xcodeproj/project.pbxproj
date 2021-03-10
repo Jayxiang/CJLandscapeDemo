@@ -141,7 +141,7 @@
 		A76ABF7B21F8599B00E3EBF2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "hyd-cjx";
 				TargetAttributes = {
 					A76ABF8221F8599B00E3EBF2 = {

@@ -120,7 +120,7 @@
     if (@available(iOS 13.0, *)) {
         NSLog(@"iOS 13 以上不能隐藏，但是可以添加颜色");
         // 可以自定义 statusBar，横屏需要另外判断
-//        UIView *statusBar = [[UIView alloc]initWithFrame:[UIApplication sharedApplication].keyWindow.windowScene.statusBarManager.statusBarFrame] ;
+//        UIView *statusBar = [[UIView alloc] initWithFrame: [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager.statusBarFrame] ;
 //        statusBar.backgroundColor = [UIColor grayColor];
 //        [[UIApplication sharedApplication].keyWindow addSubview:statusBar];
     } else {
