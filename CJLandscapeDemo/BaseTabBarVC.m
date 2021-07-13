@@ -40,7 +40,7 @@
     return _tabArr;
 }
 
-//是否可以旋转
+// 是否可以旋转
 - (BOOL)shouldAutorotate {
     return self.selectedViewController.shouldAutorotate;
 }
@@ -48,17 +48,20 @@
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return self.selectedViewController.supportedInterfaceOrientations;
 }
-//由模态推出的视图控制器 优先支持的屏幕方向
+// 由模态推出的视图控制器 优先支持的屏幕方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return self.selectedViewController.preferredInterfaceOrientationForPresentation;
 }
-//隐藏状态栏
+// 隐藏状态栏
 - (BOOL)prefersStatusBarHidden {
     return self.selectedViewController.prefersStatusBarHidden;
 }
-//状态栏样式
+// 状态栏样式
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return self.selectedViewController.preferredStatusBarStyle;
 }
+//- (UIViewController *)childViewControllerForStatusBarStyle {
+//    return self.selectedViewController;
+//}
 
 @end

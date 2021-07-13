@@ -25,7 +25,7 @@
     [super pushViewController:viewController animated:animated];
     
 }
-//是否可以旋转
+// 是否可以旋转
 - (BOOL)shouldAutorotate {
     return self.topViewController.shouldAutorotate;
 }
@@ -33,16 +33,20 @@
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return self.topViewController.supportedInterfaceOrientations;
 }
-//由模态推出的视图控制器 优先支持的屏幕方向
+// 由模态推出的视图控制器 优先支持的屏幕方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return self.topViewController.preferredInterfaceOrientationForPresentation;
 }
-//是否隐藏状态栏
+// 是否隐藏状态栏
 - (BOOL)prefersStatusBarHidden {
     return self.topViewController.prefersStatusBarHidden;
 }
-//状态栏样式
+// 状态栏样式--以下两个都可以
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return self.topViewController.preferredStatusBarStyle;
 }
+//- (UIViewController *)childViewControllerForStatusBarStyle {
+//    return self.topViewController;
+//}
+
 @end

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LandscapeSwift/LandscapeSwift.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CJLandscapeDemo2/CJLandscapeDemo2.xcodeproj">
    </FileRef>
    <FileRef
