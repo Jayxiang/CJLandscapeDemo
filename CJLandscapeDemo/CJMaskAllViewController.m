@@ -33,11 +33,11 @@
                                                 name:UIDeviceOrientationDidChangeNotification object:nil];
     //以监听UIApplicationDidChangeStatusBarOrientationNotification通知为例
     //手机锁定竖屏此通知方法也失效了
-    //页面方向
+    //页面方向 ios(2.0, 13.0)
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(statusBarOrientationChange:)
                                 name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
 }
-//界面方向改变的处理
+// 界面方向改变的处理
 - (void)statusBarOrientationChange:(NSNotification *)notification {
     
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
@@ -152,6 +152,13 @@
         [invocation invoke];
     }
 }
+// ios13 后建议使用
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    // 翻转的时间
+    CGFloat duration = [coordinator transitionDuration];
+    NSLog(@"旋转时间:%f\n屏幕宽度：%f", duration, size.width);
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self setNeedsStatusBarAppearanceUpdate];
 }
